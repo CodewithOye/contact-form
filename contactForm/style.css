@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(#404385,#18426c);
+}
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2{
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-bottom: 5px;
+
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background: #fdfdff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #444;
+    border-radius: 50px;
+    align-items: center;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+textarea{
+    resize: none;
+}
+
+.contact-inputs:focus{
+    border: 3px solid #05022a;
+}
+
+.contact-inputs::placeholder{
+    color: #444;
+}
+
+.contact-left button{
+    display: flex;
+    align-items:center ;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #18426c;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(280deg,#dddde2, #a2a5b3);
+    cursor: pointer;
+    transition: all .9s ease-in-out;
+}
+
+.contact-left button img{
+    height: 30px;
+}
+.contact-left button:hover{
+    background: linear-gradient(160deg, #0c1f4e,#032039);
+    color: #fdfdff;
+}
+
+
+.contact-right img{
+    width: 500px;
+    height: auto;
+    margin: 0;
+}
+
+
+@media (max-width:766px) {
+    .contact-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
